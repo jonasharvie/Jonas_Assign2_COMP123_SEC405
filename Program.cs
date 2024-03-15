@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -88,6 +89,44 @@ namespace Jonas_Assign2_COMP123_SEC405
         public override string ToString()
         {
             return $"Movie: {Movie}, Time: {Time} Day: {Day}, Price: {Price}";
+        }
+    }
+    class Theatre
+    {
+        public List<Show> shows { get; }
+        public string Name { get; }
+        public Theatre(string name) 
+        { 
+            Name = name;
+            shows = new List<Show>();
+        }
+        public void AddShow(Show show)
+        {
+            shows.Add(show);
+        }
+        public void PrintShows()
+        {
+
+        }
+        public void PrintShows(GenreEnum genre)
+        {
+
+        }
+        public void PrintShows(DayEnum day)
+        {
+
+        }
+        public void PrintShows(Time time)
+        {
+
+        }
+        public void PrintShows(string actor)
+        {
+
+        }
+        public void PrintShows(DayEnum day, Time time)
+        {
+
         }
     }
 
